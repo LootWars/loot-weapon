@@ -1,4 +1,4 @@
-from brownie import Contract, WeaponStats
+from brownie import Contract, LootWeapon
 import brownie
 import pytest
 
@@ -7,16 +7,17 @@ def dai():
     yield Contract.from_explorer("0x6B175474E89094C44Da98b954EedeAC495271d0F")
 
 
-def test_full(accounts, WeaponStats):
-    wep = WeaponStats.deploy({"from": accounts[0]})
+def test_full(accounts, LootWeapon):
+    wep = LootWeapon.deploy({"from": accounts[0]})
     looter = brownie.accounts.at("0x009988Ff77eEaa00051238ee32C48f10a174933E", force=True)
     wep.claimForLoot(1855, {"from": looter})
     print(wep.ownerOf(1855))
     print(wep.tokenURI(1855))
+    print(wep.getWeapon(1855))
 
 
-def test_blacksmith(accounts, WeaponStats, dai):
-    wep = WeaponStats.deploy({"from": accounts[0]})
+def test_blacksmith(accounts, LootWeapon, dai):
+    wep = LootWeapon.deploy({"from": accounts[0]})
     wep.setToken("0x6B175474E89094C44Da98b954EedeAC495271d0F", {"from": accounts[0]})
     wep.setBoostCoefficient(1e18, {"from": accounts[0]})
     whale = brownie.accounts.at("0x6F6C07d80D0D433ca389D336e6D1feBEA2489264", force=True)
