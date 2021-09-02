@@ -1729,7 +1729,7 @@ contract LootWeapon is ERC721Enumerable, ReentrancyGuard, Ownable {
         return string(buffer);
     }
     
-    constructor() ERC721("LOOTWEAPON", "LWEAPON") Ownable() {
+    constructor() ERC721("Loot Weapon", "LWEAPON") Ownable() {
         bases[0] = [800,350,850,800,0];
         bases[1] = [200,400,350,200,0];
         bases[2] = [400,250,550,400,0];
