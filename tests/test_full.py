@@ -9,7 +9,10 @@ def dai():
 
 def test_full(accounts, WeaponStats):
     wep = WeaponStats.deploy({"from": accounts[0]})
-    print(wep.tokenURI(6040, {"from": accounts[0]}))
+    looter = brownie.accounts.at("0x009988Ff77eEaa00051238ee32C48f10a174933E", force=True)
+    wep.claimForLoot(1855, {"from": looter})
+    print(wep.ownerOf(1855))
+    print(wep.tokenURI(1855))
 
 
 def test_blacksmith(accounts, WeaponStats, dai):

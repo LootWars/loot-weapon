@@ -1,10 +1,10 @@
 pragma solidity 0.8.0;
 
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
-import "@openzeppelin/contracts/access/Ownable.sol";
+import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
-import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
+import "@openzeppelin/contracts/access/Ownable.sol";
 import "../interfaces/ILoot.sol";
 import "./Base64.sol";
 
@@ -12,6 +12,8 @@ import "./Base64.sol";
  * @title  WeaponStats
  * @author kjr217
  * @notice Looters! Come and collect your arms! War is upon us, we must fight!
+ *         The Weaponsmith is open. Looters will be able to mint their weapons and reveal their underlying powers
+ *         - attack, defense, durability, weight and magic. Mint your weapon, reveal your stats.
  */
 contract WeaponStats is ERC721Enumerable, ReentrancyGuard, Ownable {
     using SafeERC20 for IERC20;
@@ -30,7 +32,7 @@ contract WeaponStats is ERC721Enumerable, ReentrancyGuard, Ownable {
 
     event TokenUpdated(address oldToken, address newToken);
     event Upgrade(uint256 tokenId, uint256 upgradeAmount);
-    event BoostCoefficientUpdated(uint256 oldBoostCoefficient, uint256 NewBoostCoefficient);
+    event BoostCoefficientUpdated(uint256 oldBoostCoefficient, uint256 newBoostCoefficient);
     event WeaponSmithOpen(bool open);
 
     string[] private weapons = [
@@ -336,7 +338,7 @@ contract WeaponStats is ERC721Enumerable, ReentrancyGuard, Ownable {
         return string(buffer);
     }
     
-    constructor() ERC721("Weapons stats", "WSTATS") Ownable() {
+    constructor() ERC721("LOOTWEAPON", "LWEAPON") Ownable() {
         bases[0] = [800,350,850,800,0];
         bases[1] = [200,400,350,200,0];
         bases[2] = [400,250,550,400,0];
