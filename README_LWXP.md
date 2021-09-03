@@ -10,7 +10,7 @@ Fight, earn XP, upgrade your items, repeat. By defeating your enemies, become th
 
 # Claiming LWXP
 
-Here's how to claim your LWXP:
+Here's how to claim your LWXP, which requires ownership of at least one weapon:
 
 * Open https://etherscan.io/address/0xf18ec76f918a89a5d790e7150dd468d750a5c4e8#writeContract
 
