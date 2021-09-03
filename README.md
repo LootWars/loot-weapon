@@ -16,7 +16,7 @@ Here's how you can claim your loot weapons:
 
 * To mint with existing loot, click "claimForLoot" and enter your loot ID less than 8000.
 
-* To mint without loot, click "claim" and enter an ID greater than 8000, but less than 9475.
+* To mint without loot, click "claim" and enter an ID greater than 8000, but less than 9575.
 
 * If that loot weapon has already been claimed, metamask will show a very high cost for gas.
 
