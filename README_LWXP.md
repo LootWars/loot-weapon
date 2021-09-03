@@ -2,7 +2,7 @@
 
 __Warriors!__
 
-Enclosed in this package is your starting balance of Loot Wars XP ($LWXP), points you can burn to upgrade your weapons, armor and accessories to become a more formidable opponent. 
+Enclosed in this package is your starting balance of Loot Wars XP ($LWXP), points you can __burn to upgrade__ your weapons, armor and accessories to become a more formidable opponent. 
 
 You earn these points with the blood you spill in battles, wars, and dungeons.
 
