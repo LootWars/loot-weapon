@@ -10,7 +10,7 @@ Claim the weapon from your lootbag and reveal your stats: attack, defense, durab
 
 Here's how you can claim your loot weapons:
 
-* Open __________________________
+* Open https://etherscan.io/address/0x0ac0ecc6d249f1383c5c7c2ff4941bd56decdd14#writeContract
 
 * Click Connect to web3.
 
