@@ -39,3 +39,7 @@ Use side `1` to join the attackers, or side `2` to support the defenders.
 If it gives you a super high gas amount, that might mean that you've already
 enlisted in that battle, or your weapon is already in use for that battle, or
 it's too late to participate in that battle.
+
+## Redeeming rewards
+
+We are hard at work on launching the rewards contract so you can redeem your winnings in LWXP. You will be able to claim for all battles, retrospectively too. 
