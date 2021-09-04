@@ -10,7 +10,7 @@ You can now use your Loot Weapon in battle against other warriors.
 
 If you want to create a battle, use the `startBattle` function in the Etherscan:
 
-https://etherscan.io/address/0x5be515103ae8f2f759a6e74cd4bcd26a518fd103#writeContract
+https://etherscan.io/address/0x56ddd8167164da0c0c48e1e9a904553f3571c5b6#writeContract
 
 You'll be able to choose how long (in seconds) the battle will last. E.g. choose 3600 if
 you want an hour-long battle, or 86400 for a day-long struggle.
