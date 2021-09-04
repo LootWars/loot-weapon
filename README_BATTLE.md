@@ -44,3 +44,7 @@ it's too late to participate in that battle.
 We are hard at work on launching the rewards contract so you can redeem your
 winnings in LWXP. You will be able to claim for all battles, retrospectively
 too.
+
+## No weapon?
+
+Instructions on getting a Loot Weapon: https://github.com/LootWars/loot-weapon/blob/master/README.md
